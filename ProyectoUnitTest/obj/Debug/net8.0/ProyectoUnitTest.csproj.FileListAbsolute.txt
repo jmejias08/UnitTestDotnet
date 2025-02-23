@@ -1,0 +1,14 @@
+C:\Users\josue\source\repos\ProyectoUnitTest\ProyectoUnitTest\obj\Debug\net8.0\ProyectoUnitTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josue\source\repos\ProyectoUnitTest\ProyectoUnitTest\obj\Debug\net8.0\ProyectoUnitTest.AssemblyInfoInputs.cache
+C:\Users\josue\source\repos\ProyectoUnitTest\ProyectoUnitTest\obj\Debug\net8.0\ProyectoUnitTest.AssemblyInfo.cs
+C:\Users\josue\source\repos\ProyectoUnitTest\ProyectoUnitTest\obj\Debug\net8.0\ProyectoUnitTest.csproj.CoreCompileInputs.cache
+C:\Users\josue\source\repos\ProyectoUnitTest\ProyectoUnitTest\bin\Debug\net8.0\ProyectoUnitTest.exe
+C:\Users\josue\source\repos\ProyectoUnitTest\ProyectoUnitTest\bin\Debug\net8.0\ProyectoUnitTest.deps.json
+C:\Users\josue\source\repos\ProyectoUnitTest\ProyectoUnitTest\bin\Debug\net8.0\ProyectoUnitTest.runtimeconfig.json
+C:\Users\josue\source\repos\ProyectoUnitTest\ProyectoUnitTest\bin\Debug\net8.0\ProyectoUnitTest.dll
+C:\Users\josue\source\repos\ProyectoUnitTest\ProyectoUnitTest\bin\Debug\net8.0\ProyectoUnitTest.pdb
+C:\Users\josue\source\repos\ProyectoUnitTest\ProyectoUnitTest\obj\Debug\net8.0\ProyectoUnitTest.dll
+C:\Users\josue\source\repos\ProyectoUnitTest\ProyectoUnitTest\obj\Debug\net8.0\refint\ProyectoUnitTest.dll
+C:\Users\josue\source\repos\ProyectoUnitTest\ProyectoUnitTest\obj\Debug\net8.0\ProyectoUnitTest.pdb
+C:\Users\josue\source\repos\ProyectoUnitTest\ProyectoUnitTest\obj\Debug\net8.0\ProyectoUnitTest.genruntimeconfig.cache
+C:\Users\josue\source\repos\ProyectoUnitTest\ProyectoUnitTest\obj\Debug\net8.0\ref\ProyectoUnitTest.dll
