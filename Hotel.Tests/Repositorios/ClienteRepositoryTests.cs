@@ -33,6 +33,18 @@ public class ClienteRepositoryTests
     }
 
     [Test]
+    public void AgregarCliente_DeberiaFallarSiClienteYaExiste()
+    {
+        // Arrange
+        var cliente = new Cliente { IdCliente = 1, Nombre = "Juan Perez", Email = "juan@example.com", Telefono = "123456789" };
+        _clienteRepo.AgregarCliente(cliente);
+
+        // Act & Assert
+        var ex = Assert.Throws<InvalidOperationException>(() => _clienteRepo.AgregarCliente(cliente));
+        Assert.That(ex.Message, Is.EqualTo("El cliente ya existe en el sistema."), "No se lanzó la excepción esperada.");
+    }
+
+    [Test]
     public void EliminarCliente_DeberiaEliminarClienteCorrectamente()
     {
         // Arrange
@@ -46,4 +58,16 @@ public class ClienteRepositoryTests
         var clienteEncontrado = _clienteRepo.BuscarCliente(1);
         Assert.That(clienteEncontrado, Is.Null); // Verifica que el cliente se haya eliminado
     }
+
+    [Test]
+    public void EliminarCliente_DeberiaNoHacerNadaSiClienteNoExiste()
+    {
+        // Act
+        _clienteRepo.EliminarCliente(99); // ID que no existe
+        var clienteEncontrado = _clienteRepo.BuscarCliente(99);
+
+        // Assert
+        Assert.That(clienteEncontrado, Is.Null, "Se intentó eliminar un cliente inexistente y ocurrió un error.");
+    }
+
 }

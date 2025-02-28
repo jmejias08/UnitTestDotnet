@@ -30,6 +30,21 @@ public class HabitacionRepositoryTests
     }
 
     [Test]
+    public void AgregarHabitacion_HabitacionDuplicada_DeberiaLanzarExcepcion()
+    {
+        // Arrange
+        var habitacion = new Habitacion { IdHabitacion = 1, Tipo = "Doble", Precio = 100, Disponible = true };
+        _habitacionRepo.AgregarHabitacion(habitacion);
+
+        // Act
+        TestDelegate accion = () => _habitacionRepo.AgregarHabitacion(habitacion);
+
+        // Assert
+        Assert.Throws<InvalidOperationException>(accion);
+    }
+
+
+    [Test]
     public void BuscarHabitacion_DeberiaFiltrarPorTipo()
     {
         // Arrange
@@ -45,4 +60,20 @@ public class HabitacionRepositoryTests
         Assert.That(habitaciones.Count, Is.EqualTo(1)); // Verifica que solo haya una habitación del tipo "Doble"
         Assert.That(habitaciones[0].Tipo, Is.EqualTo("Doble")); // Verifica que el tipo de la habitación sea "Doble"
     }
+
+    [Test]
+    public void BuscarHabitacion_HabitacionNoExiste_DeberiaRetornarListaVacia()
+    {
+        // Arrange
+        var habitacion1 = new Habitacion { IdHabitacion = 1, Tipo = "Doble", Precio = 100, Disponible = true };
+        _habitacionRepo.AgregarHabitacion(habitacion1);
+
+        // Act
+        var habitaciones = _habitacionRepo.BuscarHabitacion(tipo: "Suite");
+
+        // Assert
+        Assert.That(habitaciones.Count, Is.EqualTo(0)); // Verifica que la lista esté vacía
+    }
+
+
 }

@@ -33,6 +33,20 @@ public class ReservaRepositoryTests
     }
 
     [Test]
+    public void AgregarReserva_SinIdClienteOIdHabitacion_DeberiaLanzarExcepcion()
+    {
+        // Arrange
+        var reserva = new Reserva { IdReserva = 3, FechaInicio = DateTime.Now, FechaFin = DateTime.Now.AddDays(3) };
+
+        // Act
+        TestDelegate accion = () => _reservaRepo.AgregarReserva(reserva);
+
+        // Assert
+        Assert.Throws<Exception>(accion);
+    }
+    
+
+    [Test]
     public void CancelarReserva_DeberiaEliminarReservaCorrectamente()
     {
         // Arrange
@@ -46,4 +60,20 @@ public class ReservaRepositoryTests
         var reservaEncontrada = _reservaRepo.BuscarReserva(1);
         Assert.That(reservaEncontrada, Is.Null); // Verifica que la reserva se haya eliminado
     }
+
+
+    [Test]
+    public void CancelarReserva_ReservaNoExistente_NoDeberiaLanzarExcepcion()
+    {
+        // Arrange
+        int idReservaInexistente = 99;
+
+        // Act
+        TestDelegate accion = () => _reservaRepo.CancelarReserva(idReservaInexistente);
+
+        // Assert
+        Assert.DoesNotThrow(accion);
+    }
+
+
 }

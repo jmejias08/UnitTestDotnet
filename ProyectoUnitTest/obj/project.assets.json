@@ -8,23 +8,23 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\josue\\.nuget\\packages\\": {},
+    "C:\\Users\\luisa\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\josue\\source\\repos\\ProyectoUnitTest\\ProyectoUnitTest\\Hotel.csproj",
+      "projectUniqueName": "C:\\Users\\luisa\\OneDrive\\Desktop\\Calidad\\Proyecto1\\UnitTestDotnet\\ProyectoUnitTest\\Hotel.csproj",
       "projectName": "Hotel",
-      "projectPath": "C:\\Users\\josue\\source\\repos\\ProyectoUnitTest\\ProyectoUnitTest\\Hotel.csproj",
-      "packagesPath": "C:\\Users\\josue\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\josue\\source\\repos\\ProyectoUnitTest\\ProyectoUnitTest\\obj\\",
+      "projectPath": "C:\\Users\\luisa\\OneDrive\\Desktop\\Calidad\\Proyecto1\\UnitTestDotnet\\ProyectoUnitTest\\Hotel.csproj",
+      "packagesPath": "C:\\Users\\luisa\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\luisa\\OneDrive\\Desktop\\Calidad\\Proyecto1\\UnitTestDotnet\\ProyectoUnitTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\josue\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\luisa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

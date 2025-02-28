@@ -32,4 +32,19 @@ public class FacturaServiceTests
         // Verifica que la factura se haya generado correctamente (simulado con Console.WriteLine)
         Assert.Pass("La factura se generó correctamente.");
     }
+
+    [Test]
+    public void GenerarFactura_ReservaInexistente_DeberiaLanzarExcepcion()
+    {
+        // Arrange
+        _mockReservaRepo.Setup(repo => repo.BuscarReserva(1)).Returns((Reserva)null); // No devuelve ninguna reserva
+
+        // Act
+        TestDelegate accion = () => _facturaService.GenerarFactura(new Reserva { IdReserva = 1 });
+
+        // Assert
+        Assert.Throws<InvalidOperationException>(accion);
+    }
+
+
 }
